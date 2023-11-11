@@ -7,21 +7,20 @@
 #include <cstring>
 
 FlipCoinWindow::FlipCoinWindow()
-        : m_button("Flip"), m_box(Gtk::Orientation::VERTICAL) { // 初始化box, button
-    // 设置标题和边框宽度
+        : m_button("Flip"), m_box(Gtk::Orientation::VERTICAL), m_coin_area() { // 初始化box, button
+
     set_title("Flip Coin Game");
 
     // 设置box的边距
     m_box.set_margin(10); // 替代set_border_width的功能
     m_box.append(m_button); // 将button添加到box
-    m_box.append(m_label);
+    //m_box.append(m_label);
+    m_box.append(m_coin_area); // 将m_coin_area添加到m_box中
     set_child(m_box); // 将box设置为window的子widget
 
     // 组织布局
     m_button.signal_clicked().connect(sigc::mem_fun(*this, &FlipCoinWindow::on_button_clicked));
 
-    // 将按钮加入窗口
-//    set_child(m_button);
 }
 
 FlipCoinWindow::~FlipCoinWindow() {}
@@ -53,7 +52,9 @@ void FlipCoinWindow::on_button_clicked() {
     send(sock, "flip", strlen("flip"), 0);  // 发送翻转请求
     valread = read(sock, buffer, 1024);  // 读取服务端的响应
     std::string result(buffer, valread);  // 将响应转换为std::string
-    m_label.set_text(result);  // 更新标签显示结果
+    //m_label.set_text(result);  // 更新标签显示结果
+    m_coin_area.set_text(result); // 更新硬币面值显示
+
 
     ::close(sock);  // 关闭socket连接
 }

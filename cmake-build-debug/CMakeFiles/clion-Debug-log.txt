@@ -1,0 +1,8 @@
+/Users/siwanyu/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/siwanyu/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/siwanyu/Assignment/c++/flipcoin -B /Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug
+-- Checking for module 'gtkmm-4.0'
+--   Found gtkmm-4.0, version 4.12.0
+-- Checking for module 'gtkmm-4.0'
+--   Found gtkmm-4.0, version 4.12.0
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug

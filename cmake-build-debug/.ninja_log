@@ -1,0 +1,12 @@
+# ninja log v5
+5	1275	1699509429215721694	client/CMakeFiles/FlipCoinClient.dir/main.cpp.o	7f806d34202ff668
+1	619	1699506589153838093	server/CMakeFiles/FlipCoinServer.dir/main.cpp.o	72be1bd770c86149
+1276	1397	1699509429342100731	client/FlipCoinClient	1c1e5cf27089b37f
+1	671	1699506589206173873	server/CMakeFiles/FlipCoinServer.dir/server.cpp.o	dc178020e2b5e3e9
+671	715	1699506589251462397	server/FlipCoinServer	bcb99dcd6874fc9b
+0	1196	1699506344583255013	client/CMakeFiles/FlipCoinClient.dir/window.cpp.o	5f7d6a12b4072c68
+3	330	1699663035909766894	build.ninja	9bc66b5e1fc99447
+5	1223	1699663733397166409	client/CMakeFiles/FlipCoinClient.dir/coin_drawing_area.cpp.o	d0fbbbb064dfb37d
+5	1236	1699663733410994824	client/CMakeFiles/FlipCoinClient.dir/window.cpp.o	5f7d6a12b4072c68
+4	1287	1699663733461407961	client/CMakeFiles/FlipCoinClient.dir/main.cpp.o	7f806d34202ff668
+1287	2761	1699663734941754785	client/FlipCoinClient	a936959bdc067534

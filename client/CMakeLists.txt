@@ -18,7 +18,9 @@ link_directories(${GTKMM_LIBRARY_DIRS})
 add_definitions(${GTKMM_CFLAGS_OTHER})
 
 # 指定编译源代码生成可执行文件
-add_executable(FlipCoinClient main.cpp window.cpp)
+add_executable(FlipCoinClient main.cpp window.cpp
+        coin_drawing_area.cpp
+        coin_drawing_area.h)
 
 # 链接GTKMM库到我们的客户端项目
 target_link_libraries(FlipCoinClient ${GTKMM_LIBRARIES})

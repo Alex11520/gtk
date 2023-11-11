@@ -5,6 +5,8 @@
 #include <gtkmm/label.h>
 #include <gtkmm/window.h>
 #include <gtkmm/box.h>
+#include "coin_drawing_area.h"
+
 
 class FlipCoinWindow : public Gtk::Window {
 public:
@@ -12,12 +14,13 @@ public:
     virtual ~FlipCoinWindow();
 
 protected:
-    // 信号处理函数
+    // method that deals with request
     void on_button_clicked();
 
-    // 控件成员
+    // members
     Gtk::Button m_button;
-    Gtk::Label m_label;
+    //Gtk::Label m_label;
+    CoinDrawingArea m_coin_area; // 使用CoinDrawingArea替代Gtk::Label
     Gtk::Box m_box;
 };
 

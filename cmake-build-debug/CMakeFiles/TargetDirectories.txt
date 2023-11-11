@@ -1,0 +1,8 @@
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/client/CMakeFiles/FlipCoinClient.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/client/CMakeFiles/edit_cache.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/client/CMakeFiles/rebuild_cache.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/server/CMakeFiles/FlipCoinServer.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/server/CMakeFiles/edit_cache.dir
+/Users/siwanyu/Assignment/c++/flipcoin/cmake-build-debug/server/CMakeFiles/rebuild_cache.dir
