@@ -7,12 +7,7 @@
 int main(int argc, char *argv[]) {
     // 设置C++全局locale为C locale
     std::locale::global(std::locale("en_US.UTF-8"));
-//
-//    auto app = Gtk::Application::create("org.gtkmm.examples.base");
-////    FlipCoinWindow window;
-//
-//    // Shows the window and returns when it is closed.
-//    return app->make_window_and_run<FlipCoinWindow>(argc, argv);
+
     std::cout << "Creating application." << std::endl;
     auto app = Gtk::Application::create("org.gtkmm.examples.base");
     std::cout << "Creating window." << std::endl;

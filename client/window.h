@@ -5,8 +5,7 @@
 #include <gtkmm/label.h>
 #include <gtkmm/window.h>
 #include <gtkmm/box.h>
-#include "coin_drawing_area.h"
-
+#include <gtkmm/centerbox.h> // 包含Gtk::CenterBox的头文件
 
 class FlipCoinWindow : public Gtk::Window {
 public:
@@ -14,14 +13,19 @@ public:
     virtual ~FlipCoinWindow();
 
 protected:
-    // method that deals with request
+    // 信号处理函数
     void on_button_clicked();
 
-    // members
+    // 控件成员
     Gtk::Button m_button;
-    //Gtk::Label m_label;
-    CoinDrawingArea m_coin_area; // 使用CoinDrawingArea替代Gtk::Label
-    Gtk::Box m_box;
+    Gtk::Label m_label;
+    Gtk::CenterBox m_center_box; // 用于居中标签的CenterBox
+    Gtk::Box m_outer_box; // 包含所有控件的Box，负责整体布局
+
+
+    // 添加的CSS初始化函数
+    void init_css();
+
 };
 
 #endif // FLIPCOIN_WINDOW_H
