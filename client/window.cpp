@@ -8,32 +8,32 @@
 #include <gtkmm/cssprovider.h>
 #include <gtkmm/aspectframe.h>
 
-FlipCoinWindow::FlipCoinWindow() : m_button("Flip"), m_label("?"), m_center_box(), m_outer_box(Gtk::Orientation::VERTICAL)  { // 初始化box, button
-    // 设置标题和边框宽度
+FlipCoinWindow::FlipCoinWindow() : m_button("Flip"), m_label("?"), m_center_box(), m_outer_box(Gtk::Orientation::VERTICAL)  {
+    // game name
     set_title("Flip Coin Game");
+    // label default text
     m_label.set_text("?");
-    m_label.set_size_request(100, 100); // 确保标签足够大以显示为圆形
+    // label size
+    m_label.set_size_request(100, 100);
 
-
-
-    // 初始化CSS样式
+    //create css
     init_css();
 
-    // 创建一个AspectFrame，并设置其宽高比为1:1，不允许拉伸
+    //create a aspect frame
     Gtk::AspectFrame aspect_frame( 1.0, false);
-    aspect_frame.set_child(m_label); // 将label设置为AspectFrame的子控件
-    aspect_frame.set_halign(Gtk::Align::CENTER); // 水平居中
-    aspect_frame.set_valign(Gtk::Align::CENTER); // 垂直居中
+    aspect_frame.set_child(m_label);
+    aspect_frame.set_halign(Gtk::Align::CENTER); //horizontal
+    aspect_frame.set_valign(Gtk::Align::CENTER); //vertical
 
-    // 将AspectFrame添加到CenterBox中
-    m_center_box.set_center_widget(aspect_frame); // 将AspectFrame置于CenterBox中心
+    // put AspectFrame inside CenterBox and in the center
+    m_center_box.set_center_widget(aspect_frame);
 
-    // 将CenterBox添加到外部Box中，并确保按钮也居中
+    // put CenterBox inside outer Box
     m_outer_box.set_expand(true);
     m_outer_box.append(m_center_box);
-    m_button.set_margin_top(10); // 为按钮添加上方边距
+    m_button.set_margin_top(10);
     m_outer_box.append(m_button);
-    m_button.set_halign(Gtk::Align::CENTER); // 水平居中
+    m_button.set_halign(Gtk::Align::CENTER);
 
     // 设置整个窗口的子项为外部盒子
     set_child(m_outer_box);

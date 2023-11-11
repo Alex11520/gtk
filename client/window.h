@@ -5,7 +5,7 @@
 #include <gtkmm/label.h>
 #include <gtkmm/window.h>
 #include <gtkmm/box.h>
-#include <gtkmm/centerbox.h> // 包含Gtk::CenterBox的头文件
+#include <gtkmm/centerbox.h>
 
 class FlipCoinWindow : public Gtk::Window {
 public:

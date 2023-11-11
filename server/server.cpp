@@ -39,9 +39,10 @@ void FlipCoinServer::run() {
     int new_socket;
     long valread;
     is_running = true;
-    std::cout << "Server started. Waiting for connections..." << std::endl;
+
 
     while (is_running) {
+        std::cout << "Server started. Waiting for connections..." << std::endl;
         if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen))<0) {
             perror("accept");
             exit(EXIT_FAILURE);
@@ -63,3 +64,7 @@ std::string FlipCoinServer::flip_coin() {
     return dis(gen) == 0 ? "head" : "tail";
 }
 
+void FlipCoinServer::stop() {
+    is_running = false;
+    close(server_fd);
+}

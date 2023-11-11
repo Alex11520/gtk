@@ -10,6 +10,7 @@ public:
     ~FlipCoinServer();
 
     void run();
+    void stop();
 
 private:
     int server_fd; // 服务器的文件描述符
