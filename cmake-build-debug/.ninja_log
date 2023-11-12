@@ -33,3 +33,14 @@
 5	1032	1699711449279680398	client/CMakeFiles/FlipCoinClient.dir/window.cpp.o	5f7d6a12b4072c68
 5	1052	1699711449300815764	client/CMakeFiles/FlipCoinClient.dir/main.cpp.o	7f806d34202ff668
 1052	1108	1699711449360634036	client/FlipCoinClient	1c1e5cf27089b37f
+2	714	1699747126174681130	server/CMakeFiles/FlipCoinServer.dir/server.cpp.o	dc178020e2b5e3e9
+714	835	1699747126296271330	server/FlipCoinServer	bcb99dcd6874fc9b
+3	666	1699747915304050939	server/CMakeFiles/FlipCoinServer.dir/server.cpp.o	dc178020e2b5e3e9
+666	708	1699747915347302409	server/FlipCoinServer	bcb99dcd6874fc9b
+2	687	1699749068141812660	server/CMakeFiles/FlipCoinServer.dir/server.cpp.o	dc178020e2b5e3e9
+687	804	1699749068259160655	server/FlipCoinServer	bcb99dcd6874fc9b
+3	3141	1699759465017594547	server/CMakeFiles/FlipCoinServer.dir/main.cpp.o	72be1bd770c86149
+3	3187	1699759465063451609	server/CMakeFiles/FlipCoinServer.dir/server.cpp.o	dc178020e2b5e3e9
+3187	3310	1699759465187205063	server/FlipCoinServer	bcb99dcd6874fc9b
+8	643	1699760715944427388	server/CMakeFiles/FlipCoinServer.dir/main.cpp.o	72be1bd770c86149
+643	761	1699760716062805565	server/FlipCoinServer	bcb99dcd6874fc9b
