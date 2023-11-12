@@ -7,23 +7,25 @@
 #include <gtkmm/box.h>
 #include <gtkmm/centerbox.h>
 
+// Declaration of the FlipCoinWindow class which inherits from Gtk::Window
 class FlipCoinWindow : public Gtk::Window {
 public:
+    // Constructor declaration
     FlipCoinWindow();
+    // Virtual destructor declaration
     virtual ~FlipCoinWindow();
 
 protected:
-    // 信号处理函数
+    // Signal handler function for button click events
     void on_button_clicked();
 
-    // 控件成员
-    Gtk::Button m_button;
-    Gtk::Label m_label;
-    Gtk::CenterBox m_center_box; // 用于居中标签的CenterBox
-    Gtk::Box m_outer_box; // 包含所有控件的Box，负责整体布局
+    // Widget member variables
+    Gtk::Button m_button; // Button for flipping the coin
+    Gtk::Label m_label; // Label to display flip results
+    Gtk::CenterBox m_center_box; // CenterBox to center the label on the window
+    Gtk::Box m_outer_box; // Outer Box to contain all widgets and manage the layout
 
-
-    // 添加的CSS初始化函数
+    // Function to initialize CSS for styling the widgets
     void init_css();
 
 };
